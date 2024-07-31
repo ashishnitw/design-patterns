@@ -39,12 +39,12 @@ public class SingletonDbDemo {
 //    return conn;
 //  }
 
-  public static void main(String[] args) {
+    public static void main(String[] args) {
 //    SingletonDbDemo first = SingletonDbDemo.getInstance();
 //    SingletonDbDemo second = SingletonDbDemo.getInstance();
 //    if(first == second)
 //      System.out.println("They are same instance");
 //    else
 //      System.out.println("They are different instance");
-  }
+    }
 }

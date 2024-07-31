@@ -1,12 +1,11 @@
 package creational.singleton;
 
 public class SingletonThreadSafeUsingVolatile {
-  private static volatile SingletonThreadSafeUsingVolatile instance = null;
-  private SingletonThreadSafeUsingVolatile() {
-    if(instance != null) {
-      throw new RuntimeException("Use getInstance() method to create");
-    }
-  }
+
+  private static volatile SingletonThreadSafeUsingVolatile instance;
+
+  private SingletonThreadSafeUsingVolatile() {}
+
   public static SingletonThreadSafeUsingVolatile getInstance() {
     if(instance == null) {
       synchronized (SingletonThreadSafeUsingVolatile.class) {
