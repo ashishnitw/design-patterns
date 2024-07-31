@@ -1,0 +1,23 @@
+
+X
+java:S2094"BRemove this empty class, write its code or make it an "interface".(İŞ»£
+U
+java:S6213":Rename this variable to not match a restricted identifier.(í¸ı´úÿÿÿÿ
+P
+java:S6213":Rename this variable to not match a restricted identifier.(Õîúİ
+i
+java:S2975"SRemove this "clone" implementation; use a copy constructor or copy factory instead.(€€…
+/
+java:S2225"Return a non null object.(¥¹ï
+P
+java:S1854$":Remove this useless assignment to local variable "second".(ÃØÄ
+P
+java:S6213"":Rename this variable to not match a restricted identifier.(²˜¹ú
+A
+java:S1481$"+Remove this unused "second" local variable.(ÃØÄ
+B
+java:S1068"'Remove this unused "sql" private field.(ş²©ÿÿÿÿÿ
+I
+java:S1068".Remove this unused "parameters" private field.(œªñúÿÿÿÿ
+E
+java:S1068"*Remove this unused "record" private field.(í¸ı´úÿÿÿÿ

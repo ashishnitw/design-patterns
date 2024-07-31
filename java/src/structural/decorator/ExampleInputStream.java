@@ -2,7 +2,7 @@ package structural.decorator;
 
 import java.io.*;
 
-public class InputStreamExample {
+public class ExampleInputStream {
   public static void main(String[] args) throws IOException {
     File file = new File("./output.txt");
     file.createNewFile();

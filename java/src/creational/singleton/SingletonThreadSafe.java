@@ -1,27 +1,29 @@
 package creational.singleton;
 
-public class SingletonThreadSafeUsingVolatile {
+public class SingletonThreadSafe {
 
-  private static volatile SingletonThreadSafeUsingVolatile instance;
+    // volatile keyword ensures that changes made to the instance variable are visible to all threads.
+    private static volatile SingletonThreadSafe instance;
 
-  private SingletonThreadSafeUsingVolatile() {}
+    private SingletonThreadSafe() {}
 
-  public static SingletonThreadSafeUsingVolatile getInstance() {
-    if(instance == null) {
-      synchronized (SingletonThreadSafeUsingVolatile.class) {
-        if(instance == null)
-          instance = new SingletonThreadSafeUsingVolatile();
-      }
+    public static SingletonThreadSafe getInstance() {
+        // Double-checked locking for thread safety
+        if (instance == null) {
+            synchronized (SingletonThreadSafe.class) {
+                if (instance == null)
+                    instance = new SingletonThreadSafe();
+            }
+        }
+        return instance;
     }
-    return instance;
-  }
 
-  public static void main(String[] args) {
-    SingletonThreadSafeUsingVolatile first = SingletonThreadSafeUsingVolatile.getInstance();
-    SingletonThreadSafeUsingVolatile second = SingletonThreadSafeUsingVolatile.getInstance();
-    if(first == second)
-      System.out.println("They are same instance");
-    else
-      System.out.println("They are different instance");
-  }
+    public static void main(String[] args) {
+        SingletonThreadSafe first = SingletonThreadSafe.getInstance();
+        SingletonThreadSafe second = SingletonThreadSafe.getInstance();
+        if(first == second)
+            System.out.println("They are same instance");
+        else
+            System.out.println("They are different instance");
+    }
 }

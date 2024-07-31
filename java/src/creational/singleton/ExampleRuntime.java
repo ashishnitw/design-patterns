@@ -1,6 +1,6 @@
 package creational.singleton;
 
-public class RuntimeExample {
+public class ExampleRuntime {
     public static void main(String[] args) {
         Runtime firstRuntime = Runtime.getRuntime();
         firstRuntime.gc();
@@ -11,5 +11,7 @@ public class RuntimeExample {
 
         if (firstRuntime == secondRuntime)
             System.out.println("They are same instance");
+        else
+            System.out.println("They are different instance");
     }
 }

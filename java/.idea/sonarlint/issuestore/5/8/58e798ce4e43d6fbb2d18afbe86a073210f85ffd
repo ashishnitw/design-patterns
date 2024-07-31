@@ -1,0 +1,9 @@
+
+
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Çµí‘8‰–æñ…2
+V
+java:S2168"9Remove this dangerous instance of double-checked locking.(ÌÇŠ8äœàñ…2
+K
+java:S1068")Remove this unused "value" private field.(‰Ì•İûÿÿÿÿ8Ò›İñ…2
+R
+java:S1144"0Remove this unused private "getInstance" method.(÷ÇÇ£şÿÿÿÿ8Œ–æñ…2
